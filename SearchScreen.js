@@ -10,6 +10,7 @@ import {
   Alert,
   Linking
 } from "react-native";
+import { ACCESS_TOKEN } from "react-native-dotenv";
 
 export class SearchScreen extends React.Component {
   constructor(props) {
@@ -29,7 +30,7 @@ export class SearchScreen extends React.Component {
       {
         headers: {
           "Content-type": "sapplication/json; charset=UTF-8",
-          Authorization: "token " + your_access_token
+          Authorization: "token " + ACCESS_TOKEN
         }
       }
     )
