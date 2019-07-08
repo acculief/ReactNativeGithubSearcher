@@ -10,7 +10,6 @@ import {
   Alert,
   Linking
 } from "react-native";
-const your_access_token = "d9eebecbbc9b4d9fe2b328852a24dde07a291b4d";
 
 export class SearchScreen extends React.Component {
   constructor(props) {
@@ -36,7 +35,7 @@ export class SearchScreen extends React.Component {
     )
       .then(response => response.json())
       .then(responseJson => {
-        console.log(responseJson.items[0]);
+        console.log(responseJson);
         this.setState({
           items: responseJson.items
         });
