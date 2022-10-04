@@ -8,7 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^33.0.0",
+    "expo": "^46.0.14",
     "mime": "^2.4.4",
     "npm-install-missing": "^0.1.4",
     "react": "16.8.3",
